@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Facebook Login</title>
+		<title>Document</title>
 		<style>
 			body{
 				background-color:#f6f6f6;
 				display:flex;
 				justify-content:center;
-				height:100vh;
 				align-items:center;
+				height:100vh;
 			}
 			.left{
 				width:450px;
@@ -19,13 +19,11 @@
 			}
 			form{
 				display:flex;
-				width:300px;
+				flex-direction:column;
 				background-color:white;
 				padding:20px;
-				border:1px solid black;
 				border-radius:5px;
 				box-shadow:0 0 10px #ccc;
-				flex-direction:column;
 				gap:10px;
 			}
 			input{
@@ -33,43 +31,35 @@
 				border-radius:5px;
 				padding:10px;
 			}
-			.signup{
+			.input{
 				background-color:#1877f2;
-				border:1px solid black;
 				border-radius:5px;
-				padding: 10px 20px;
-                color:white;
-				
+				padding:10px 20px;
+				width:100vh;
 			}
 			a{
 				text-decoration:none;
 				color:#1877f2;
 			}
-			.class{
+			.signup{
 				background-color:#42b72a;
-				border:1px solid black;
-				border-radius:5px;
-				padding: 10px 20px;
-                color:white;
+				color:white;
 			}
 		</style>
-		
 	</head>
 	<body>
 		<div class="left">
-      <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="facebook logo" height="150px" width="300px" />	
+			<img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="facebook logo"/>
 			<p>Facebook helps you connect and share with the people in your life.</p>
 		</div>
 		<div class="right">
 			<form>
 				<input type="text" id="email" placeholder="Email address or phone number"/>
 				<input type="password" id="password" placeholder="Password"/>
-				<input type="submit" value="Log in" class="class"/>
+				<input type="submit" value="Log in" class="input"/>
 				<a>Forgotten account?</a>
 				<button class="signup">Create new account</button>
 			</form>
-			
 		</div>
-		
 	</body>
 </html>
